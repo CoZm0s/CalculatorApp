@@ -1,69 +1,94 @@
-#mainbody{
-    display: flex;
-    flex-direction: row;
+
+body {
+    font-family: "Comic Sans Ms", "Times New Roman", "Arial", serif;
+    font-size: 20px;
+    color: rgb(26, 255, 217);
+    text-shadow: 0px 0px 4px mediumblue;
+    background-color: ghostwhite;
+}
+#calculator {
     margin: auto;
-    display: block;
-    width: 300px;
-    height: 400px;
-    border: 2px black solid;
+    height: 500px;
+    width: 350px;
+    background-color: gray;
+    box-shadow: -12px -11px 20px 10px rgb(0, 16, 20);
+    position: relative;
+    font-family: inherit;
+    border-width: 5px;
+    border-color: rgba(97, 237, 255, 0.61);
+    border-style: solid;
+    border-radius: 30px;
 }
-#input{
+#display {
+    background-color: rgb(29, 31, 30);
+    color: ghostwhite;
+    text-shadow: 0px 0px 2px black, 0px 0px 5px black, 0px 0px 10px black;
+    box-shadow: 0px 0px 16px rgb(0, 255, 255);
+    height: 100px;
+    width: 280px;
+    position: relative;
+    bottom: 50px;
+    border-width: 3px;
+    border-color: grey;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    margin-left: 25px;
+    border: 3px solid aqua;
     overflow: hidden;
-    font-size: 2.5em;
-    border: 2px black solid;
-    width: 200px;
-    height: 50px;
-    margin: 7px;
+    border-radius: 15px;;
+ 
 }
-#commands{
-    display: flex;
-    flex-direction: column;
-    margin: 7px;
-    position: relative;
-    bottom: 61px;
-    left: 210px;
-    width: 67px;
-    height: 300px;
-    border: 2px black solid;
+#inputZone, #answerZone {
+    width: 280px;
+    height: 25px;
+    padding: 10px 10px;
+    transition: 0.666s;
 }
-.command{
-    color: blueviolet;
-    background-color: aqua;
-    cursor: pointer;
-    border: 2px black solid;
-    width: 60px;
-    margin: 5px;
-    height: 50px;
+#firstOperand {
+    transition: 0.666s;
+}
+#secondOperand {
+    transition: 0.666s;
+}
+#answerZone{
     position: relative;
-    right: 2px;
+    right: 15px;
+    text-align: right;
+    transition: 0.666s;
 }
 
-#numpad{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    position: relative;
-    bottom: 310px;
-    left: 7px;
-    width: 200px;
-    height: 238px;
-    border: 2px black solid;
-}
-.num{
-    cursor: pointer;
-    text-align: center;
-    position: relative;
-    top: 2px;
-    width: 60px;
+
+button {
     height: 50px;
-    border: 2px black solid;
-}
-#manual{
+    width: 50px;
+    border-color: rgba(8, 239, 255, 0.612);
+    border-width: 2px;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.696);
+    font-family: "Comic Sans Ms", "Times New Roman", "Arial", serif;
+    color: ghostwhite;
+    font-size: 15px;
+    margin: auto;
     position: relative;
-    top: -300px;
-    left: 20px;
-    width: 250px;
-    height: 60px;
-    border: 2px black solid;
+    left: 2.2%;
+    border-radius: 50%;
+    transition: 0.3s;
 }
+#buttons{
+    width: 230px;
+    position: relative;
+    bottom: 65px;
+    margin: auto;
+}
+#buttons :hover{
+    border-color: white;
+}
+#buttons :active{
+    border-color: blueviolet;
+}
+
+#equals {
+    width: 115px;
+    border-radius: 60px;
+}
+

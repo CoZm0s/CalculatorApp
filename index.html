@@ -1,36 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="mainbody">
-        <div id="input">Try me out</div>
-        <div id="commands">
-            <button class="command" id="plus">  +  </button>
-            <button class="command" id="minus">  -  </button>
-            <button class="command" id="percent">  %  </button>
-            <button class="command" id="mult">  *  </button>
-            <button class="command" id="div">  /  </button>
-            <button class="command" id="clear">  AC  </button>
-            <button class="command" id="calc">  =  </button>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link href="style.css" rel="stylesheet">
+        <meta charset="UTF8">
+    </head>
+    <body>
+        <div id="calculator">
+            <div id="display">
+                <div id="inputZone">
+                <span id="firstOperand"></span> <span id="operator"></span> <span id="secondOperand"></span>
+                </div>
+                <div id="answerZone"></div>
+
+            </div>
+            <div id="buttons">
+                <div class="buttonLine">
+                    <button class="specialBtn" id="clear">AC</button>
+                    <button class="specialBtn" id="backspace">Del</button>
+                    <button class="resultBtn" id="vodka">%</button>
+                    <button class="operatorBtn" id="divideAndconquer">/</button>
+                </div>
+                <div class="buttonLine">
+                    <button class="digitz" id="seven">7</button>
+                    <button class="digitz" id="eight">8</button>
+                    <button class="digitz" id="nein">9</button>
+                    <button class="operatorBtn" id="multiply">x</button>
+                </div>
+                <div class="buttonLine">
+                    <button class="digitz" id="four">4</button>
+                    <button class="digitz" id="five">5</button>
+                    <button class="digitz" id="six">6</button>
+                    <button class="operatorBtn" id="subtract">-</button>
+                </div>
+                <div class="buttonLine">
+                    <button class="digitz" id="one">1</button>
+                    <button class="digitz" id="two">2</button>
+                    <button class="digitz" id="three">3</button>
+                    <button class="operatorBtn" id="add">+</button>
+                </div>
+                <div class="buttonLine">
+                    <button class="digitz" id="Zero">0</button>
+                    <button class="specialBtn" id="dot">.</button>
+                    <button class="resultBtn" id="equals">=</button>
+
+
+                </div>
+
+
+            </div>
         </div>
-        <div id="numpad">
-            <button class="num" id="1"> 1 </button>
-            <button class="num" id="2"> 2 </button>
-            <button class="num" id="3"> 3 </button>
-            <button class="num" id="4"> 4 </button>
-            <button class="num" id="5"> 5 </button>
-            <button class="num" id="6"> 6 </button>
-            <button class="num" id="7"> 7 </button>
-            <button class="num" id="8"> 8 </button>
-            <button class="num" id="9"> 9 </button>
-            <button class="num" id="0"> 0 </button>
-        </div>
-        <div id="manual"></div>
-    </div>
-</body>
+
+    </body>
+    <script src="main.js"></script>
 </html>
